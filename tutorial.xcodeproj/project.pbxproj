@@ -8,21 +8,33 @@
 
 /* Begin PBXBuildFile section */
 		2BD01781288D3BB6008B7315 /* TutorialApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD01780288D3BB6008B7315 /* TutorialApp.swift */; };
-		2BD01783288D3BB6008B7315 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD01782288D3BB6008B7315 /* ContentView.swift */; };
 		2BD01785288D3BB7008B7315 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BD01784288D3BB7008B7315 /* Assets.xcassets */; };
 		2BD01788288D3BB7008B7315 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BD01787288D3BB7008B7315 /* Preview Assets.xcassets */; };
 		2BD017AB288D6164008B7315 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD017AA288D6164008B7315 /* CircleImage.swift */; };
 		2BD017AD288D633E008B7315 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD017AC288D633E008B7315 /* MapView.swift */; };
+		2BD017AF288D7AC2008B7315 /* landmarkData.json in Resources */ = {isa = PBXBuildFile; fileRef = 2BD017AE288D7AC2008B7315 /* landmarkData.json */; };
+		2BD017B1288D7AFE008B7315 /* Landmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD017B0288D7AFE008B7315 /* Landmark.swift */; };
+		2BD017D1288D8131008B7315 /* ModelDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD017D0288D8131008B7315 /* ModelDecoder.swift */; };
+		2BD017D9288D857C008B7315 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD017D8288D857C008B7315 /* Constants.swift */; };
+		2BD017DC288D8699008B7315 /* LandmarkCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD017DB288D8699008B7315 /* LandmarkCard.swift */; };
+		2BD017DE288D967A008B7315 /* LandmarkListPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD017DD288D967A008B7315 /* LandmarkListPage.swift */; };
+		2BD017E0288D987E008B7315 /* LandmarkDetailPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD017DF288D987E008B7315 /* LandmarkDetailPage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2BD0177D288D3BB6008B7315 /* Tutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BD01780288D3BB6008B7315 /* TutorialApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialApp.swift; sourceTree = "<group>"; };
-		2BD01782288D3BB6008B7315 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2BD01784288D3BB7008B7315 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2BD01787288D3BB7008B7315 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2BD017AA288D6164008B7315 /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
 		2BD017AC288D633E008B7315 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		2BD017AE288D7AC2008B7315 /* landmarkData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = landmarkData.json; sourceTree = "<group>"; };
+		2BD017B0288D7AFE008B7315 /* Landmark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Landmark.swift; sourceTree = "<group>"; };
+		2BD017D0288D8131008B7315 /* ModelDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelDecoder.swift; sourceTree = "<group>"; };
+		2BD017D8288D857C008B7315 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		2BD017DB288D8699008B7315 /* LandmarkCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkCard.swift; sourceTree = "<group>"; };
+		2BD017DD288D967A008B7315 /* LandmarkListPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkListPage.swift; sourceTree = "<group>"; };
+		2BD017DF288D987E008B7315 /* LandmarkDetailPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkDetailPage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,10 +67,12 @@
 		2BD0177F288D3BB6008B7315 /* Tutorial */ = {
 			isa = PBXGroup;
 			children = (
+				2BD017AE288D7AC2008B7315 /* landmarkData.json */,
+				2BD017D7288D854D008B7315 /* Utils */,
+				2BD017D6288D84B8008B7315 /* Helpers */,
+				2BD017D4288D8414008B7315 /* Model */,
+				2BD017D2288D83CD008B7315 /* View */,
 				2BD01780288D3BB6008B7315 /* TutorialApp.swift */,
-				2BD01782288D3BB6008B7315 /* ContentView.swift */,
-				2BD017AA288D6164008B7315 /* CircleImage.swift */,
-				2BD017AC288D633E008B7315 /* MapView.swift */,
 				2BD01784288D3BB7008B7315 /* Assets.xcassets */,
 				2BD01786288D3BB7008B7315 /* Preview Content */,
 			);
@@ -71,6 +85,50 @@
 				2BD01787288D3BB7008B7315 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		2BD017D2288D83CD008B7315 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2BD017DA288D8659008B7315 /* Widgets */,
+				2BD017DD288D967A008B7315 /* LandmarkListPage.swift */,
+				2BD017DF288D987E008B7315 /* LandmarkDetailPage.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2BD017D4288D8414008B7315 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2BD017B0288D7AFE008B7315 /* Landmark.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2BD017D6288D84B8008B7315 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				2BD017D0288D8131008B7315 /* ModelDecoder.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		2BD017D7288D854D008B7315 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				2BD017D8288D857C008B7315 /* Constants.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		2BD017DA288D8659008B7315 /* Widgets */ = {
+			isa = PBXGroup;
+			children = (
+				2BD017AA288D6164008B7315 /* CircleImage.swift */,
+				2BD017AC288D633E008B7315 /* MapView.swift */,
+				2BD017DB288D8699008B7315 /* LandmarkCard.swift */,
+			);
+			path = Widgets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -133,6 +191,7 @@
 			files = (
 				2BD01788288D3BB7008B7315 /* Preview Assets.xcassets in Resources */,
 				2BD01785288D3BB7008B7315 /* Assets.xcassets in Resources */,
+				2BD017AF288D7AC2008B7315 /* landmarkData.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,10 +202,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2BD01783288D3BB6008B7315 /* ContentView.swift in Sources */,
+				2BD017DE288D967A008B7315 /* LandmarkListPage.swift in Sources */,
+				2BD017DC288D8699008B7315 /* LandmarkCard.swift in Sources */,
+				2BD017E0288D987E008B7315 /* LandmarkDetailPage.swift in Sources */,
 				2BD017AD288D633E008B7315 /* MapView.swift in Sources */,
 				2BD01781288D3BB6008B7315 /* TutorialApp.swift in Sources */,
+				2BD017D9288D857C008B7315 /* Constants.swift in Sources */,
 				2BD017AB288D6164008B7315 /* CircleImage.swift in Sources */,
+				2BD017D1288D8131008B7315 /* ModelDecoder.swift in Sources */,
+				2BD017B1288D7AFE008B7315 /* Landmark.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,7 +340,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"lesson1/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"tutorial/Preview Content\"";
 				DEVELOPMENT_TEAM = YM684SHRN8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -305,7 +369,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"lesson1/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"tutorial/Preview Content\"";
 				DEVELOPMENT_TEAM = YM684SHRN8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;

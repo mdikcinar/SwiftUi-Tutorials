@@ -7,11 +7,13 @@
 
 import SwiftUI
 
+var landmarks: [Landmark] = load(Constants.landMarkJsonPath)
+
 @main
 struct TutorialApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            LandmarkListPage(landmarks: landmarks)
         }
     }
 }
