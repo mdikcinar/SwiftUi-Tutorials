@@ -10,6 +10,6 @@ struct Constants{
     static var previewDeviceList:[String] = [
         "iPhone SE (2nd generation)",
         "iPhone 13",
-        "iPad Pro (12.9-inch) (5th generation)",
+        //"iPad Pro (12.9-inch) (5th generation)",
     ]
 }

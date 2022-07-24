@@ -8,7 +8,14 @@
 import SwiftUI
 
 struct LandmarkDetailPage: View {
+    @EnvironmentObject var modelData: ModelData
     var landmark: Landmark
+    
+    
+    var landmarkIndex: Int{
+        modelData.landmarks.firstIndex(where: {$0.id == landmark.id}) ?? -1
+    }
+    
     var body: some View {
         ScrollView {
             MapView(coordinate: landmark.locationCoordinate)
@@ -17,9 +24,12 @@ struct LandmarkDetailPage: View {
                 .padding(.bottom,-130)
             CircleImage(image: landmark.image)
             VStack(alignment: .leading) {
-                Text(landmark.name)
-                    .font(.title)
-                    .foregroundColor(.black)
+                HStack {
+                    Text(landmark.name)
+                        .font(.title)
+                        .foregroundColor(.black)
+                    FavoriteButton(isSet: $modelData.landmarks[landmarkIndex].isFavorite)
+                }
                 Text(landmark.category)
                     .foregroundColor(.secondary)
                 HStack {
@@ -47,9 +57,10 @@ struct LandmarkDetailPage_Previews: PreviewProvider {
     static var previews: some View {
         ForEach(Constants.previewDeviceList, id: \.self){
             device in
-            LandmarkDetailPage(landmark: landmarks[0])
+            LandmarkDetailPage(landmark: ModelData().landmarks[0])
                 .previewDevice(PreviewDevice(rawValue: device))
                 .previewDisplayName(device)
+                .environmentObject(ModelData())
         }
         
     }

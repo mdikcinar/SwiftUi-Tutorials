@@ -7,13 +7,13 @@
 
 import SwiftUI
 
-var landmarks: [Landmark] = load(Constants.landMarkJsonPath)
-
 @main
 struct TutorialApp: App {
+    @StateObject private var modelData = ModelData()
     var body: some Scene {
         WindowGroup {
-            LandmarkListPage(landmarks: landmarks)
+            LandmarkListPage()
+                .environmentObject(modelData)
         }
     }
 }
